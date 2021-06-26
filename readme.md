@@ -8,3 +8,5 @@ select distinct city from station where REGEXP_LIKE(city,'^[AEIOU]');
 # HackerRank Problem 7
 select CITY from STATION where right(lower(CITY),1) in ('a','e','i','o','u') group by CITY;
 ``right() work for select character from right side. and lower() make string into lower case``
+# HackerRank Problem 8
+SELECT DISTINCT city FROM station WHERE city RLIKE '^[aeiouAEIOU].*[aeiouAEIOU]$';
