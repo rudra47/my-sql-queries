@@ -16,6 +16,6 @@ SELECT DISTINCT city FROM station WHERE NOT REGEXP_LIKE(city,'^[AEIOU]');
 # HackerRank Problem 10
 select CITY from STATION where NOT right(lower(CITY),1) in ('a','e','i','o','u') group by CITY;
 ``Use WHERE NOT``
-# HackerRank Problem 10
+# HackerRank Problem 11
 SELECT DISTINCT city FROM station WHERE NOT city RLIKE '^[aeiouAEIOU].*[aeiouAEIOU]$';
 ``Use WHERE NOT``
