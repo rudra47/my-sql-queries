@@ -10,3 +10,9 @@ select CITY from STATION where right(lower(CITY),1) in ('a','e','i','o','u') gro
 ``right() work for select character from right side. and lower() make string into lower case``
 # HackerRank Problem 8
 SELECT DISTINCT city FROM station WHERE city RLIKE '^[aeiouAEIOU].*[aeiouAEIOU]$';
+# HackerRank Problem 9
+SELECT DISTINCT city FROM station WHERE NOT REGEXP_LIKE(city,'^[AEIOU]');
+``Use WHERE NOT``
+# HackerRank Problem 9
+select CITY from STATION where NOT right(lower(CITY),1) in ('a','e','i','o','u') group by CITY;
+``Use WHERE NOT``
